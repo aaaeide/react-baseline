@@ -18,5 +18,11 @@ module.exports = {
     'prettier/@typescript-eslint',
     'plugin:prettier/recommended', // must be placed last
   ],
-  rules: {},
+  rules: {
+    '@typescript-eslint/no-explicit-any': ['error'],
+    '@typescript-eslint/explicit-function-return-type': [
+      'error',
+      { allowExpressions: true },
+    ],
+  },
 };
